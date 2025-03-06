@@ -8,21 +8,55 @@
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
 }
 
 .container1 {
     grid-column: 1 / 1;
 }
+.container2 {
+    grid-column: 2 / 2;
+    display: grid;
+    grid-template-rows: 33% 33% 1fr;
+    width: 100%;
+}
+
+.heading-container {
+    border: black solid 1px;
+    grid-row: 1 / 1;
+    background-color: rgba(41, 59, 50, 0.908);  
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.heading-text {
+   color: rgb(255, 254, 254);
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 10px;
+    mix-blend-mode: color-dodge;
+    
+}
+.forms-container {
+    border: 1px solid black;
+    grid-row: 2 / 2;
+    background-color: rgba(0, 0, 0, 0.291);
+}
+
+.button-container {
+    border: 1px solid black;
+    grid-row: 3 / 3;
+    background-color: rgba(41, 59, 50, 0.908);
+}
 .img-container {
     height: 100%;
-    width: 80%;
+    width: 100%;
 }
 
 .background {
     width: 100%;
     height: 100%;
-    position: relative;
     z-index: -1;
     
 }
@@ -44,10 +78,10 @@
 .logo-text {
     color: white;
     position: relative;
-    font-size: 5rem;
-    left: 10%;
-    bottom: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 5.5rem;
+    left: 12%;
+    bottom: 15px;
+    font-family: "Cabin Sketch", sans-serif ;
 }
 
 .img-credit {
