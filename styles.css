@@ -1,99 +1,108 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .wrapper1 {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 45% 55%;
 }
 
 .container1 {
-    grid-column: 1 / 1;
+	grid-column: 1 / 1;
 }
 .container2 {
-    grid-column: 2 / 2;
-    display: grid;
-    grid-template-rows: 33% 33% 1fr;
-    width: 100%;
+	grid-column: 2 / 2;
+	display: grid;
+	grid-template-rows: 33% 33% 1fr;
+	width: 100%;
 }
 
 .heading-container {
-    border: black solid 1px;
-    grid-row: 1 / 1;
-    background-color: rgba(41, 59, 50, 0.908);  
-    display: flex;
-    align-items: center;
-    height: 100%;
+	grid-row: 1 / 1;
+	background-color: rgba(223, 255, 239, 0.908);
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
 .heading-text {
-   color: rgb(255, 254, 254);
-    font-size: 2rem;
-    text-align: left;
-    padding-left: 10px;
-    mix-blend-mode: color-dodge;
-    
+	color: rgb(0, 0, 0);
+	font-size: 1.8rem;
+	text-align: left;
+	padding-left: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.form-text {
+	font-size: 1.8rem;
+	color: rgb(0, 0, 0);
+	grid-column: 1 / 3;
+	grid-row: 1 / 1;
+	text-align: center;
+    margin-top: 10px;
 }
 .forms-container {
-    border: 1px solid black;
-    grid-row: 2 / 2;
-    background-color: rgba(0, 0, 0, 0.291);
+	border: 1px solid black;
+	grid-row: 2 / 2;
+	background-color: rgba(255, 241, 216, 0.538);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .button-container {
-    border: 1px solid black;
-    grid-row: 3 / 3;
-    background-color: rgba(41, 59, 50, 0.908);
+	grid-row: 3 / 3;
+	background-color: rgba(223, 255, 239, 0.908);
 }
 .img-container {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .background {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
 .logo {
-    position: relative;
-    top: 10px;
-    left: 30px;
-    height: 25%;
-    width: 20%;
+	position: relative;
+	top: 10px;
+	left: 65px;
+	height: 100px;
+	width: 90px;
 }
 
 .logo-container {
-    position: absolute;
-    top: 100px;
-    background: rgba(0, 0, 0, 0.301);
-    width: 40%;
+	position: absolute;
+	top: 240px;
+	background: rgba(0, 0, 0, 0.223);
+	width: 45%;
 }
 .logo-text {
-    color: white;
-    position: relative;
-    font-size: 5.5rem;
-    left: 12%;
-    bottom: 15px;
-    font-family: "Cabin Sketch", sans-serif ;
+	color: white;
+	position: relative;
+	font-size: 5rem;
+	left: 85px;
+	bottom: 10px;
+	font-family: 'Cabin Sketch', sans-serif;
 }
 
 .img-credit {
-    position: absolute;
-    z-index: 99;
-    left: 12%;
-    bottom: 0%;
-    height: auto;
-    color: white;
-    font-size: 10px;
+	position: absolute;
+	z-index: 99;
+	left: 15%;
+	bottom: 0%;
+	height: auto;
+	color: white;
+	font-size: 10px;
 }
 
 a {
-    color: rgb(0, 200, 255);
+	color: rgb(0, 200, 255);
 }

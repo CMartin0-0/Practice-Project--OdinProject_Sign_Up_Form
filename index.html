@@ -10,16 +10,29 @@
 			rel="stylesheet"
 			href="/styles.css"
 		/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Sign-up Form</title>
 	</head>
 	<body>
 		<div class="wrapper1">
 			<div class="container1">
 				<div class="img-container">
-					<img class="background" src="\assets\daniel-sessler-hnw3Al47-KE-unsplash.jpg" />
+					<img
+						class="background"
+						src="\assets\daniel-sessler-hnw3Al47-KE-unsplash.jpg"
+					/>
 					<span class="img-credit"
 						>Photo by
 						<a
@@ -32,19 +45,53 @@
 							>Unsplash</a
 						>
 					</span>
-          <span class="logo-container"><img class="logo" src="\assets\odin-lined.png"/><span class="logo-text">ODIN</span></span>
+					<span class="logo-container"
+						><img
+							class="logo"
+							src="\assets\odin-lined.png"
+						/><span class="logo-text">ODIN</span></span
+					>
 				</div>
 			</div>
-      <div class="container2">
-        <div class="heading-container">
-          <p class="heading-text">Hey! Give us your info, everyone knows it is perfectly safe sharing all your info online at any time!</p>
+			<div class="container2">
+				<div class="heading-container">
+					<span class="heading-text">
+						Hey! Give us your info. Everyone knows it is perfectly
+						<em>safe</em> to share all your info online freely!
+						<br />
+						<br />
+						<em>Don't</em> miss this opportunity!
+						<br />
+						<br />
+						------ Sign up <em>now</em>! ------
+					</span>
+				</div>
+				<div class="forms-container">
+					<p class="form-text">Hurry! This is a <em>limited</em> time offer!</p>
+          <form id="signupform">
+            <label for="fname" class="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname" class="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="email" class="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="npassword" class="npassword">Enter New Password:</label><br>
+            <input type="password" id="npassword" name="npassword" pattern="^\S{6,}$" class="p-invalid"  required><br>
+            <label for="cpassword" class="cpassword">Confirm Password:</label><br>
+            <input type="password" id="cpassword" name="cpassword" pattern="^\S{6,}$" class="p-invalid" required>
+          </form>
+          <div class="pmessage-container">
+            <p id="extext">Password must contain the following:</p>
+            <p id="lowerletter" class="invalid">One lowercase letter</p>
+            <p id="upperletter" class="inavlid">One uppercase letter</p>
+            <p id="length" class="invalid">At least 8 charatcers</p>
+          </div>
+				</div>
+				<div class="button-container">
+          <button type="submit" form="signupform">Create Account</button>
+          <p id="acc-exist-text">Already gave us all your info? Log in <a href="">here</a>.</p>
         </div>
-        <div class="forms-container">
-          <p class="form-text">Hurry! This is a limited time offer!</p>
-
-        </div>
-        <div class="button-container"></div>
-      </div>
+			</div>
 		</div>
 	</body>
 	<script
