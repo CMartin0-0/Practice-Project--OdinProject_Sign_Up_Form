@@ -23,6 +23,7 @@
 			href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<title>Sign-up Form</title>
 	</head>
 	<body>
@@ -76,19 +77,21 @@
             <label for="email" class="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br>
             <label for="npassword" class="npassword">Enter New Password:</label><br>
-            <input type="password" id="npassword" name="npassword" pattern="^\S{6,}$" class="p-invalid"  required><br>
+            <input type="password" id="npassword" name="npassword"  class="invalid2" placeholder="Enter Password" required/><br>
+            <button class="passwordvisibility" id="passwordvisibility"><i class="fas fa-eye" id="icon"></i></button>
             <label for="cpassword" class="cpassword">Confirm Password:</label><br>
-            <input type="password" id="cpassword" name="cpassword" pattern="^\S{6,}$" class="p-invalid" required>
+            <input type="password" id="cpassword" name="cpassword"  class="invalid2" placeholder = "Enter Password" required />
           </form>
           <div class="pmessage-container">
-            <p id="extext">Password must contain the following:</p>
-            <p id="lowerletter" class="invalid">One lowercase letter</p>
-            <p id="upperletter" class="inavlid">One uppercase letter</p>
-            <p id="length" class="invalid">At least 8 charatcers</p>
+            <p id="extext" class="hidden">Password(s) must:</p>
+            <p id="lowerletter" class="invalid hidden" >Contain at least one lowercase letter</p>
+            <p id="upperletter" class="invalid hidden" >Contain at least one uppercase letter</p>
+            <p id="length" class="invalid hidden" >Be at least 8 characters in length</p>
+            <p id="match" class="invalid hidden" >Match</p>
           </div>
 				</div>
 				<div class="button-container">
-          <button type="submit" form="signupform">Create Account</button>
+          <button id="submit" type="submit" form="signupform">Create Account</button>
           <p id="acc-exist-text">Already gave us all your info? Log in <a href="">here</a>.</p>
           <p id="project-credit">This project is part of <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">theOdinProject</a> curriculum.</p>
         </div>
